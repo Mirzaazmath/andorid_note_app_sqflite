@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+
+    android:background="@drawable/dailog_border"
+
+
+    >
+    <TextView
+        android:id="@+id/addNoteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Notes"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:paddingHorizontal="20dp"
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:hint="Enter Title"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:background="@drawable/orange_border"/>
+
+    <EditText
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:textColor="@color/white"
+        android:hint="Enter Description"
+        android:maxLines="5"
+        android:background="@drawable/orange_border"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Submit"
+        android:textSize="20sp"
+        />
+
+
+
+</LinearLayout>
